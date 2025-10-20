@@ -1,0 +1,37 @@
+{
+    "python.pythonPath": "./.venv/bin/python",
+    "python.defaultInterpreterPath": "./.venv/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.venvPath": "./.venv",
+    "python.analysis.extraPaths": [
+        "./.venv/lib/python3.12/site-packages"
+    ],
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "black",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "cursorpyright.analysis.autoImportCompletions": true,
+    "cursorpyright.analysis.extraPaths": [
+        "./.venv/lib/python3.12/site-packages"
+    ],
+    "cursorpyright.analysis.typeCheckingMode": "basic",
+    "python.terminal.envFile": "${workspaceFolder}/.env",
+    "terminal.integrated.env.osx": {
+        "RAY_DEFAULT_OBJECT_STORE_MEMORY_PROPORTION": "0.5",
+        "RAY_DISABLE_IMPORT_WARNING": "1",
+        "RAY_ENABLE_WINDOWS_OR_OSX_CLUSTER": "1"
+    },
+    "terminal.integrated.env.linux": {
+        "RAY_DEFAULT_OBJECT_STORE_MEMORY_PROPORTION": "0.5",
+        "RAY_DISABLE_IMPORT_WARNING": "1"
+    },
+    "terminal.integrated.env.windows": {
+        "RAY_DEFAULT_OBJECT_STORE_MEMORY_PROPORTION": "0.5",
+        "RAY_DISABLE_IMPORT_WARNING": "1"
+    },
+    "terminal.integrated.shellArgs.osx": ["-c", "source ${workspaceFolder}/activate_ray_env.sh && exec zsh"]
+}
+
